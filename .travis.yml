@@ -1,4 +1,4 @@
 language: objective-c
 xcode_workspace: travis-ci.xcodeproj/project.xcworkspace # path to your workspace folder
 xcode_scheme: travis-ci
-xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=10.14.2,name=iPhone X
