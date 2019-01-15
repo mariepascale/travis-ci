@@ -3,4 +3,4 @@ os: osx
 osx_image: xcode9.2
 xcode_workspace: travis-ci.xcodeproj/project.xcworkspace # path to your workspace folder
 xcode_scheme: travis-ci
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
