@@ -1,2 +1,6 @@
-language: objective-c
-script: xcodebuild -workspace travis-ci.xcodeproj/project.xcworkspace -scheme travis-ci -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+language: swift
+os: osx
+osx_image: xcode9.2
+xcode_workspace: travis-ci.xcodeproj/project.xcworkspace # path to your workspace folder
+xcode_scheme: travis-ci
+xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
