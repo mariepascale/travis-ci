@@ -1,6 +1,7 @@
 language: swift
 os: osx
 osx_image: xcode10.1
+language: swift
 xcode_workspace: travis-ci.xcodeproj/project.xcworkspace # path to your workspace folder
 xcode_scheme: travis-ci
 xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
