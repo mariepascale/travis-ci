@@ -8,4 +8,4 @@ osx_image: xcode10.1
 before_script:
   - export LANG=en_US.UTF-8
 
-script:  set -o pipefail && xcodebuild -destination "OS=12.1,name=iPhone X" clean build -scheme "Atom.Spark.iOS" -workspace "Atom.Spark.iOS.xcworkspace" | xcpretty --color
+script:  set -o pipefail && xcodebuild -destination "OS=12.1,name=iPhone X" clean build -scheme "travis-ci" -workspace "travis-ci.xcworkspace" | xcpretty --color
