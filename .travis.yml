@@ -1,7 +1,14 @@
 language: swift
 os: osx
 osx_image: xcode10.1
-language: swift
-xcode_workspace: travis-ci.xcodeproj/project.xcworkspace # path to your workspace folder
-xcode_scheme: travis-ci
-xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
+#xcode_workspace: travis-ci.xcodeproj/project.xcworkspace # path to your workspace folder
+#xcode_scheme: travis-ci
+#xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
+
+install:
+  - bundle install
+
+before_script:
+  - export LANG=en_US.UTF-8
+
+script:  set -o pipefail && xcodebuild -destination "OS=11.1,name=iPhone X" -scheme "travis-ci" -workspace "travis-ci.xcworkspace" build test | xcpretty --color --test
